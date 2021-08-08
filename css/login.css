@@ -1,0 +1,21 @@
+#login-form input {
+  border: none;
+  background: transparent;
+  padding: 1em;
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #ffffff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  color: #ffffff;
+}
+
+#login-form input:focus {
+  outline: none !important;
+  color: white;
+  border: transparent;
+  border-bottom: 1px solid #ffffff;
+  transition: border-color 0.3s ease-in-out;
+}

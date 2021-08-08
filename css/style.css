@@ -1,3 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+@import "login.css";
+@import "task.css";
+@import "quotes.css";
+@import "weather.css";
+
 .hidden {
   display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
+
+#bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 6em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+#greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

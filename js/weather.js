@@ -10,10 +10,10 @@ function onGeoOk(position) {
     .then((data) => {
       console.log(data);
       const weatherContainer = document.querySelector(
-        "#weather span:first-child"
+        "#weather span:nth-child(2)"
       );
-      const city = document.querySelector("#weather span:nth-child(2)");
-      const temp = data.main.temp;
+      const city = document.querySelector("#weather span:last-child");
+      const temp = data.main.temp.toFixed(1);
       const weather = data.weather[data.weather.length - 1];
       city.innerText = data.name;
       weatherContainer.innerHTML = `${temp} &#176;C ${weather.main}`;
